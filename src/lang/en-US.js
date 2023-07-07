@@ -2,7 +2,7 @@ export default {
   application: {
     'zh-CN': '简体中文',
     'en-US': 'English',
-    productTitle: 'Online Form Designer',
+    productTitle: 'BBM Form Designer',
     github: 'GitHub',
     document: 'Docs',
     qqGroup: 'WeChat Group',

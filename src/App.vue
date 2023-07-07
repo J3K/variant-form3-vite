@@ -14,8 +14,6 @@
 
 <script>
 import VFormDesigner from './components/form-designer/index.vue'
-
-import zhCNLang from 'element-plus/lib/locale/lang/zh-cn'
 import enUSLang from 'element-plus/lib/locale/lang/en'
 
 export default {
@@ -26,11 +24,9 @@ export default {
   data() {
     return {
       elLocaleMap: {
-        'zh-CN': zhCNLang,
         'en-US': enUSLang,
       },
 
-      //全局数据源变量
       globalDsv: {
         testApiHost: 'http://www.test.com/api',
         testPort: 8080,
@@ -40,7 +36,7 @@ export default {
   },
   computed: {
     elLocale() {
-      let curLocale = localStorage.getItem('v_form_locale') || 'zh-CN'
+      let curLocale = localStorage.getItem('v_form_locale') || 'en-US'
       return this.elLocaleMap[curLocale]
     },
 
